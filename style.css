@@ -1,0 +1,623 @@
+/* global styles starts here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+button {
+    background: #ef831d;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+
+}
+
+/* global styles ends here */
+
+/* pagemenu section starts here */
+
+.pageMenu {
+    background: #364760;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.pageMenu .pageMenu__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pageMenu__container ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 16px;
+}
+
+.pageMenu__container ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.pageMenu__container ul li:hover {
+    background: #ef831d;
+    color: white;
+}
+
+.pageMenu__container .active {
+    background: #ef831d;
+    position: relative;
+}
+
+/* pagemenu section ends here */
+
+/* portfolio section starts here */
+
+.portfolio {
+    padding: 50px;
+}
+
+.portfolio__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.portfolio__container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.portfolio__container span {
+    background: #ef831d;
+    width: 5%;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.portfolio__container > p {
+    text-align: center;
+}
+
+.portfolio__container .container__portfolioFirst {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+}
+
+.portfolio__container .container__portfolioSecond {
+    width: 76%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio__container div img {
+    margin: 20px;
+    width: 90%;
+}
+
+/* portfolio section ends here */
+
+/* contact section starts here */
+
+.contact {
+    background: url('images/mybg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.contact__container {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    padding: 100px 0;
+}
+
+.contact__container > h1 span {
+    background: rgba(0,0,0,.3);
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact__container .phone {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.contact__container .phone h1 {
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.contact__container .experience {
+    display: grid;
+    grid-template-columns: 20% 75%;
+    align-items: center;
+    width: 40%;
+    margin: 50px 0;
+}
+
+.contact__container .experience img {
+    background: rgba(0,0,0,.3);
+    padding: 10px 30px;
+    border-radius: 30px 0 0 30px;
+}
+
+.contact__container .experience h1 {
+    background: #ef831d;
+    padding: 10px 20px;
+}
+
+/* contact section ends here */
+
+/* services section starts here */
+
+.services {
+    padding: 50px;
+}
+
+.services__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.services__container > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font: 2.8rem;
+}
+
+.services__container > p {
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+}
+
+.container__services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-content: space-between; */
+    text-align: center;
+    width: 75%;
+    margin: 80px auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.services__service {
+    padding: 15px 30px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* services section ends here */
+
+/* steps section starts here */
+
+.steps {
+    padding: 50px;
+    background: white;
+}
+
+.steps__container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+.steps__container .container__leftSteps {
+    text-align: right;
+    position: relative;
+    left: 35%;
+}
+
+.steps__container .container__rightSteps {
+    position: relative;
+    left: -35%;
+}
+
+.steps__container div > div {
+    margin: 50px 0;
+}
+
+.leftSteps__numbering {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.leftSteps__numbering div img {
+    margin: 64px 0;
+}
+
+.leftSteps__numbering .numbering__left {
+    margin-top: 90px;
+    position: relative;
+    left: 50%;
+}
+
+.numbering__left img:nth-child(4) {
+    margin-top: 58px;
+}
+
+.leftSteps__numbering .numbering__right {
+    margin-top: 193px;
+    position: relative;
+    left: -50%;
+}
+
+.numbering__right img:nth-child(3) {
+    margin-top: 60px;
+}
+
+.numbering__right img:nth-child(5){
+    margin-top: 55px;
+}
+
+.numbering__right .image_final {
+    background: white;
+    border: 7px solid #ddd;
+    border-radius: 50%;
+    height: 210px;
+    width: 100%;
+    padding: 20px;
+    object-fit: contain;
+    position: relative;
+    top: -5%;
+    left: -38%;
+}
+
+/* steps section ends here */
+
+/* explanations section starts here */
+
+.explanations {
+    background: #f0f5f6;
+    padding: 50px 0;
+}
+
+.explanations__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.explanations__container h3 {
+    text-align: center;
+    color: #ef831d;
+    font-size: 1.5rem;
+}
+
+.explanations__container > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.explanations__container span {
+    width: 5%;
+    height: 3px;
+    background: #ef831d;
+    display: block;
+    margin: 20px auto;
+    /* margin-top: 20px; */
+}
+
+.explanations__container > p {
+    text-align: center;
+    width: 68%;
+    margin: 0 auto;
+}
+
+.explanations__explanation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+    margin: 50px 0;
+    margin-top: 70px;
+}
+
+.explanations__explanation div > h4 {
+    text-align: left;
+    color: #ef831d;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.explanations__explanation div > h1 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.explanations__explanation div ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.explanations__explanation div button {
+    margin-top: 30px;
+}
+/* explanations section ends here */
+
+/* pricing section starts here */
+
+.pricing {
+    background: url('images/dhaka-city-night.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding: 50px 0;
+}
+
+.pricing__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pricing__container > h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.pricing__container span {
+    width: 5%;
+    height: 3px;
+    background: #ef831d;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.pricing__container > p {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    margin: 30px 0;
+}
+
+.container__pricingPackages {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 100px auto;
+    margin-bottom: 50px;
+}
+
+.container__pricingPackages div {
+    text-align: center;
+}
+
+.container__pricingPackages div > * {
+    margin: 10px 0;
+    color: white;
+}
+
+.pricing__container button, .pricing__container b:last-child {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+/* pricing section ends here */
+
+/* packge section starts here */
+
+.package {
+    padding: 50px;
+}
+
+.package__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.package__container > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.package__container span {
+    width: 5%;
+    height: 3px;
+    background: #ef831d;
+    display: block;
+    margin: 15px auto;
+}
+
+.package__container > p {
+    text-align: center;
+    width: 72%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.list__package {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    margin: 50px 0;
+    margin-top: 80px;
+}
+
+.list__package img {
+    width: 75%;
+    background: #ddd;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.deatils__features {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.deatils__features div h4 {
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+
+.package__details button {
+    margin-top: 30px;
+}
+
+.package__details > p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.package__details > h1 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 2.6rem;
+}
+
+/* packge section ends here */
+
+
+/* request section starts here */
+
+.request {
+    background: #333A3F;
+    padding: 50px;
+}
+
+.request__container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.request__container h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.request__container > p {
+    color: white;
+    text-align: center;
+    width: 65%;
+    margin: 55px auto;
+}
+
+.request__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact__email {
+    background: white;
+    padding: 50px 35px;
+}
+
+.contact__email img, .contact__phone img {
+    margin-bottom: 30px;
+}
+
+.contact__email div, .contact__phone div {
+    margin: 30px 0;
+}
+
+.contact__phone {
+    background: white;
+    padding: 50px 35px;
+}
+
+/* request section ends here */
+
+/* our clients section starts here */
+
+.ourClients {
+    background: white;
+    padding: 50px 0;
+}
+
+.ourClients__container {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ourClients h1 {
+    padding-bottom: 16px;
+    font-size: 2.7rem;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.ourClients span {
+    height: 3px;
+    width: 10%;
+    background: #ef831d;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+.ourClients p {
+    color: #33435c;
+    font-size: 1rem;
+    line-height: 25px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.clients {
+    margin: 50px 0;
+}
+
+.itemOne div, .itemTwo div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemOne div img, .itemTwo div img {
+    margin: 20px;
+    border: 1px solid rgba(221, 221, 221, 0.787);
+    border-radius: 5px;
+}
+
+.ourClients button {
+    background: #ef831d;
+    color: white;
+}
+
+/* our clients section ends here */
