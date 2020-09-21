@@ -20,19 +20,65 @@ button {
     font-size: 1.1rem;
     font-weight: 700;
     color: white;
-
+    cursor: pointer;
 }
 
 /* global styles ends here */
+
+/* header slider section starts here */
+
+.headerSlider {
+    height: 100vh;
+}
+
+.container__slideOne {
+    background: url('images/web-design-bg-2.jpg');
+    height: 100vh;
+}
+
+.container__slideTwo {
+    background: url('images/web-design-bg-1.jpg');
+    height: 100vh;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide .slideOne__leftSection span {
+    background: #ef831d;
+    width: 10%;
+    height: 3px;
+    display: block;
+    margin: 20px 0;
+}
+
+.slideOne__leftSection p {
+    margin-bottom: 50px;
+}
+
+.slide .slideOne__rightSection {
+    justify-self: center;
+}
+
+
+/* header slider section ends here */
 
 /* pagemenu section starts here */
 
 .pageMenu {
     background: #364760;
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     z-index: 1;
 }
 

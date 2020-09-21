@@ -1,8 +1,9 @@
 $(document).ready(function () {
-  $(".clients__container").owlCarousel({
+  $(".headerSlider__container").owlCarousel({
     loop: true,
-    autoplay: false,
+    autoplay: true,
     nav: false,
+    dots: false,
     responsive: {
       0: {
         items: 1,
